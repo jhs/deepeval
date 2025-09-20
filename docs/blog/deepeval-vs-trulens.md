@@ -1,6 +1,6 @@
 ---
 title: DeepEval vs Trulens
-description: As the open-source LLM evaluation framework, DeepEval contains everything Trulens have, but also a lot more on top of it.
+description: As the open-source LLM evaluation framework, DeepEval contains everything Trulens has, but also a lot more on top of it.
 slug: deepeval-vs-trulens
 authors: [penguine]
 date: 2025-03-19
@@ -107,7 +107,7 @@ DeepEval offers countless integrations with the tools you are likely already bui
 
 ### Platform
 
-DeepEval's platform is called Confident AI, and Trulen's platform is hidden and minimal.
+DeepEval's platform is called Confident AI, and Trulens's platform is hidden and minimal.
 
 <FeatureComparisonTable type="trulens::platform" competitor="Trulens" />
 
@@ -115,4 +115,4 @@ Confident AI is also self-served, meaning you don't have to talk to us to try it
 
 ## Conclusion
 
-DeepEval offers much more features and better community, and should be more than enough to support all your LLM evaluation needs. [Get started with DeepEval here.](/docs/getting-started)
+DeepEval offers many more features and a better community, and should be more than enough to support all your LLM evaluation needs. [Get started with DeepEval here.](/docs/getting-started)

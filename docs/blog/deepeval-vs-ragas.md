@@ -22,7 +22,7 @@ This means:
 
 - **Unit-testing in CI/CD pipelines** with DeepEval's first-class pytest integration
 - **Modular, plug-and-play metrics** that you can use to build your own evaluation pipeline
-- **Less bugs and clearer error messages**, so you know exactly what is going on
+- **Fewer bugs and clearer error messages**, so you know exactly what is going on
 - **Extensive customizations** with no vendor-locking into any LLM or framework
 - **Abstracted into clear, extendable** classes and methods for better reusability
 - **Clean, readable code** that is essential if you ever need to customize DeepEval for yourself
@@ -30,13 +30,13 @@ This means:
 
 ### 2. We care about your experience, a lot
 
-We care about the usability of DeepEval and wake up everyday thinking about how we can make either the codebase or documentation better to help our users do LLM evaluation better. In fact, everytime someone asks a question in [DeepEval's discord](https://discord.gg/a3K9c8GRGt), we always try to respond with not just an answer but a relevant link to the documentation that they can read more on. If there is no such relevant link that we can provide users, that means our documentation needs improving.
+We care about the usability of DeepEval and wake up everyday thinking about how we can make either the codebase or documentation better to help our users do LLM evaluation better. In fact, every time someone asks a question in [DeepEval's discord](https://discord.gg/a3K9c8GRGt), we always try to respond with not just an answer but a relevant link to the documentation that they can read more about. If there is no such relevant link that we can provide users, that means our documentation needs improving.
 
-In terms of the codebase, a recent example is we actually broke away DeepEval's red teaming (safety testing) features into a whole now package, called DeepTeam, which took around a month of work, just so users that primarily need LLM red teaming can work in that repo instead.
+In terms of the codebase, a recent example is that we actually broke away DeepEval's red teaming (safety testing) features into a whole new package, called DeepTeam, which took around a month of work, just so users who primarily need LLM red teaming can work in that repo instead.
 
 ### 3. We have a vibrant community
 
-Whenever we're working, the team is always in the discord community on a voice call. Although we might not be talking all the time (in fact most times on mute), we do this to let users know we're always here whenever they run into a problem.
+Whenever we're working, the team is always in the discord community on a voice call. Although we might not be talking all the time (in fact most of the time on mute), we do this to let users know we're always here whenever they run into a problem.
 
 This means you'll find people are more willing to ask questions with active discussions going on.
 
@@ -74,20 +74,20 @@ If DeepEval is so good, why is Ragas so popular? Ragas started off as a research
 
 But the very research nature of Ragas means that you're not going to get as good a developer experience compared to DeepEval. In fact, we had to re-implement all of Ragas's metrics into our own RAG metrics back in early 2024 because they didn't offer things such as:
 
-- Explanability (reasoning for metric scores)
+- Explainability (reasoning for metric scores)
 - Verbose debugging (the thinking process of LLM judges used for evaluation)
 - Using any custom LLM-as-a-judge (as required by many organizations)
 - Evaluation cost tracking
 
 And our users simply couldn't wait for Ragas to ship it before being able to use it in DeepEval's ecosystem (that's why you see that we have our own RAG metrics, and the RAGASMetric, which just wraps around Ragas' metrics but with less functionality).
 
-For those that argues that Ragas is more trusted because they have a research-paper, that was back in 2023 and the metrics has changed a lot since then.
+For those who argue that Ragas is more trusted because they have a research paper, that was back in 2023 and the metrics have changed a lot since then.
 
 ### Metrics
 
 DeepEval and Ragas both specialize in RAG evaluation, however:
 
-- **Ragas**'s metrics has limited support for explanability, verbose log debugging, and error handling, and customizations
+- **Ragas**'s metrics have limited support for explainability, verbose log debugging, error handling, and customizations
 - **DeepEval**'s metrics go beyond RAG, with support for agentic workflows, LLM chatbot conversations, all through its plug-and-play metrics.
 
 DeepEval also integrates with Confident AI so you can bring these metrics to your organization whenever you're ready.
@@ -96,7 +96,7 @@ DeepEval also integrates with Confident AI so you can bring these metrics to you
 
 ### Dataset Generation
 
-DeepEval and Ragas both offers in dataset generation, and while Ragas is deeply locked into the Langchain and LlamaIndex ecosystem, meaning you can't easily generate from any documents, and offers limited customizations, DeepEval's synthesizer is 100% customizable within a few lines of code
+DeepEval and Ragas both offer dataset generation, and while Ragas is deeply locked into the LangChain and LlamaIndex ecosystem, meaning you can't easily generate from any documents, and offers limited customizations, DeepEval's synthesizer is 100% customizable within a few lines of code
 
 If you look at the table below, you'll see that DeepEval's synthesizer is very flexible.
 
@@ -116,7 +116,7 @@ Checkout [DeepTeam's documentation](https://www.trydeepteam.com/docs/getting-sta
 
 ### Benchmarks
 
-This was more of a fun project, but when we noticed LLM benchmarks were so get hold of we decided to make DeepEval the first framework to make LLM benchmarks so widely accessible. In the past, benchmarking foundational models were compute-heavy and messy. Now with DeepEval, 10 lines of code is all that is needed.
+This was more of a fun project, but when we noticed LLM benchmarks were so hard to get hold of, we decided to make DeepEval the first framework to make LLM benchmarks so widely accessible. In the past, benchmarking foundational models were compute-heavy and messy. Now with DeepEval, 10 lines of code is all that is needed.
 
 <FeatureComparisonTable type="ragas::benchmarks" competitor="Ragas" />
 
@@ -124,7 +124,7 @@ This is not the entire list (DeepEval has [15 benchmarks](/docs/benchmarks-intro
 
 ### Integrations
 
-Both offer integrations, but with a different focus. Ragas' integrations pushes users onto other platforms such as Langsmith and Helicone, while DeepEval is more focused on providing users the means to evaluate their LLM applications no matter whatever stack they are currently using.
+Both offer integrations, but with a different focus. Ragas' integrations push users onto other platforms such as LangSmith and Helicone, while DeepEval is more focused on providing users the means to evaluate their LLM applications no matter what stack they are currently using.
 
 <FeatureComparisonTable type="ragas::integrations" competitor="Ragas" />
 
@@ -132,7 +132,7 @@ You'll notice that Ragas does not own their platform integrations such as LangSm
 
 ### Platform
 
-Both DeepEval and Ragas has their own platforms. DeepEval's platform is called Confident AI, and Ragas's platform is also called Ragas.
+Both DeepEval and Ragas have their own platforms. DeepEval's platform is called Confident AI, and Ragas's platform is also called Ragas.
 
 Both have varying degrees of capabilities, and you can draw your own conclusions from the table below.
 

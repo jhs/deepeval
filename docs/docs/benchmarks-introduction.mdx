@@ -13,7 +13,7 @@ sidebar_label: Introduction
 
 ## Quick Summary
 
-LLM benchmarking provides a standardized way to quantify LLM performances across a range of different tasks. `deepeval` offers several state-of-the-art, research-backed benchmarks for you to quickly evaluate **ANY** custom LLM of your choice. These benchmarks include:
+LLM benchmarking provides a standardized way to quantify LLM performance across a range of different tasks. `deepeval` offers several state-of-the-art, research-backed benchmarks for you to quickly evaluate **ANY** custom LLM of your choice. These benchmarks include:
 
 - BIG-Bench Hard
 - HellaSwag
@@ -23,10 +23,10 @@ LLM benchmarking provides a standardized way to quantify LLM performances across
 - HumanEval
 - GSM8K
 
-To benchmark your LLM, you will need to wrap your LLM implementation (which could be anything such as a simple API call to OpenAI, or a Hugging Face transformers model) within `deepeval`'s `DeepEvalBaseLLM` class. Visit the [custom models section](/docs/metrics-introduction#using-a-custom-llm) for a detailed guide on how to create a custom model object.
+To benchmark your LLM, you will need to wrap your LLM implementation (which could be anything like a simple API call to OpenAI, or a Hugging Face transformers model) within `deepeval`'s `DeepEvalBaseLLM` class. Visit the [custom models section](/docs/metrics-introduction#using-a-custom-llm) for a detailed guide on how to create a custom model object.
 
 :::info
-In `deepeval`, anyone can benchmark **ANY** LLM of their choice in just a few lines of code. All benchmarks offered by `deepeval` follows the implementation of their original research papers.
+In `deepeval`, anyone can benchmark **ANY** LLM of their choice in just a few lines of code. All benchmarks offered by `deepeval` follow the implementation of their original research papers.
 
 :::
 
@@ -35,10 +35,10 @@ In `deepeval`, anyone can benchmark **ANY** LLM of their choice in just a few li
 LLM benchmarks are a set of standardized tests designed to evaluate the performance of an LLM on various skills, such as reasoning and comprehension. A benchmark is made up of:
 
 - one or more **tasks**, where each task is its own evaluation dataset with target labels (or `expected_outputs`)
-- a **scorer**, to determine whether predictions from your LLM is correct or not (by using target labels as reference)
-- various **prompting techniques**, which can be either involve few-shot learning and/or CoTs prompting
+- a **scorer**, to determine whether predictions from your LLM are correct or not (by using target labels as reference)
+- various **prompting techniques**, which can either involve few-shot learning and/or CoTs prompting
 
-The LLM to be evaluated will generate "predictions" for each tasks in a benchmark aided by the outlined prompting techniques, while the scorer will score these predictions by using the target labels as reference. There is no standard way of scoring across different benchmarks, but most simply uses the **exact match scorer** for evaluation.
+The LLM to be evaluated will generate "predictions" for each task in a benchmark aided by the outlined prompting techniques, while the scorer will score these predictions by using the target labels as reference. There is no standard way of scoring across different benchmarks, but most simply use the **exact match scorer** for evaluation.
 
 :::tip
 A target label in a benchmark dataset is simply the `expected_output` in `deepeval` terms.

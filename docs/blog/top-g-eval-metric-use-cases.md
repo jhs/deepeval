@@ -20,7 +20,7 @@ import BlogImageDisplayer from "@site/src/components/BlogImageDisplayer";
 4. **Safety** – Measures how safe and ethical the response is.
 5. **Custom RAG** – Measures the quality of the RAG system.
 
-In this story, we will explore these metrics, how to implement them, and best practices we've learnt from our users.
+In this story, we will explore these metrics, how to implement them, and best practices we've learned from our users.
 
 <BlogImageDisplayer alt="G-Eval Usage Statistics" src="https://deepeval-docs.s3.us-east-1.amazonaws.com/blog:top-g-eval-use-cases:usage.svg" caption="Top G-Eval Use Cases in DeepEval"/>
 
@@ -52,7 +52,7 @@ As described in the original G-Eval paper, DeepEval uses the provided `criteria`
 
 ## Why DeepEval for G-Eval?
 
-Users use DeepEval for their G-Eval implementation is because it abstracts away much of the boilerplate and complexity involved in building an evaluation framework from scratch. For example, DeepEval automatically handles the normalization of the final G-Eval score by calculating a weighted summation of the probabilities of the LLM judge's output tokens, as stated in the original G-Eval paper.
+Users use DeepEval for their G-Eval implementation because it abstracts away much of the boilerplate and complexity involved in building an evaluation framework from scratch. For example, DeepEval automatically handles the normalization of the final G-Eval score by calculating a weighted summation of the probabilities of the LLM judge's output tokens, as stated in the original G-Eval paper.
 
 Another benefit is that since G-Eval relies on LLM-as-a-judge, DeepEval allows users to run G-Eval with any LLM judge they prefer, without additional setup, is optimized for speed through concurrent execution of metrics, offers results caching, erroring handling, integration with CI/CD pipelines through Pytest, is integrated with platforms like Confident AI, and has other metrics such as DAG (more on this later) that users can incorporate G-Eval in.
 
@@ -113,7 +113,7 @@ Coherence can be assessed from multiple angles, depending on how specific you wa
 | **Conciseness**    | Assesses whether the text is free of unnecessary words or details.    |
 | **Repetitiveness** | Checks for redundancy or repeated information in the text.            |
 
-Here's a an example coherence metric assessing clarify defined using G-Eval:
+Here's an example coherence metric assessing clarity defined using G-Eval:
 
 ```python
 # Create a custom clarity metric focused on clear communication
@@ -151,7 +151,7 @@ The right tonality metric depends on the context. A medical assistant might prio
 
 Here are some commonly used tonality criteria:
 
-| Critera             | <div style={{width: "550px"}}>Description</div>                     |
+| Criteria             | <div style={{width: "550px"}}>Description</div>                     |
 | ------------------- | :------------------------------------------------------------------ |
 | **Professionalism** | Assesses the level of professionalism and expertise conveyed.       |
 | **Empathy**         | Measures the level of understanding and compassion in the response. |
@@ -195,7 +195,7 @@ When defining tonality criteria, focus on these key considerations:
 
 Safety can be broken down into more specific metrics depending on the type of risk you want to measure:
 
-| Critiera              | <div style={{width: "550px"}}>Description</div>                                                    |
+| Criteria              | <div style={{width: "550px"}}>Description</div>                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------- |
 | **PII Leakage**       | Detects personally identifiable information like names, emails, or phone numbers.                  |
 | **Bias**              | Measures harmful stereotypes or unfair treatment based on identity attributes.                     |

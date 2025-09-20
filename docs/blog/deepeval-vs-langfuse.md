@@ -1,6 +1,6 @@
 ---
 title: DeepEval vs Langfuse
-description: DeepEval and Langfuse solves different problems. While Langfuse is an entire platform for LLM observability, DeepEval focuses on modularized evaluation like Pytest.
+description: DeepEval and Langfuse solve different problems. While Langfuse is an entire platform for LLM observability, DeepEval focuses on modularized evaluation like Pytest.
 slug: deepeval-vs-langfuse
 authors: [kritinv]
 date: 2025-03-31
@@ -10,7 +10,7 @@ hide_table_of_contents: false
 
 import FeatureComparisonTable from "@site/src/components/FeatureComparisonTable";
 
-**TL;DR:** Langfuse has strong tracing capabilities, which is useful for debugging and monitoring in production, and easy to adopt thanks to solid integrations. It supports evaluations at a basic level, but lacks advanced features for heavier experimentation like A/B testing, custom metrics, granular test control. Langfuse takes a prompt-template-based approach to metrics (similar to Arize) which can be simplistic, but lacks the accuracy of research-backed metrics. The right tool depends on whether you’re focused solely on observability, or also investing in scalable, research-backed evaluation.
+**TL;DR:** Langfuse has strong tracing capabilities, which are useful for debugging and monitoring in production, and easy to adopt thanks to solid integrations. It supports evaluations at a basic level, but lacks advanced features for heavier experimentation like A/B testing, custom metrics, and granular test control. Langfuse takes a prompt-template-based approach to metrics (similar to Arize) which can be simplistic, but lacks the accuracy of research-backed metrics. The right tool depends on whether you’re focused solely on observability, or also investing in scalable, research-backed evaluation.
 
 ## How is DeepEval Different?
 
@@ -75,7 +75,7 @@ Prompt template-based metrics aren’t research-backed, offer limited control, a
 
 ### Metrics
 
-Langfuse allows users to create custom metrics using prompt templates but doesn't provide out-of-the-box metrics. This means you can use any prompt template to calculate metrics, but it also means that the metrics are research-backed, and don't give you granular score control.
+Langfuse allows users to create custom metrics using prompt templates but doesn't provide out-of-the-box metrics. This means you can use any prompt template to calculate metrics, but it also means that the metrics aren't research-backed, and don't give you granular score control.
 
 <FeatureComparisonTable type="langfuse::metrics" competitor="Langfuse" />
 
@@ -117,7 +117,7 @@ DeepEval also integrates directly with LLM providers to power its metrics, from 
 
 ### Platform
 
-Both DeepEval and Langfuse has their own platforms. DeepEval's platform is called Confident AI, and Langfuse's platform is also called Langfuse. Confident AI is built for powerful, customizable evaluation and benchmarking. Langfuse, on the other hand, is more focused on observability.
+Both DeepEval and Langfuse have their own platforms. DeepEval's platform is called Confident AI, and Langfuse's platform is also called Langfuse. Confident AI is built for powerful, customizable evaluation and benchmarking. Langfuse, on the other hand, is more focused on observability.
 
 <FeatureComparisonTable type="langfuse::platform" competitor="Langfuse" />
 

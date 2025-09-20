@@ -550,7 +550,7 @@ This test ensures your retriever _and_ generator keep performing at a high stand
 Now let’s write our GitHub actions file to complete our CI integration.
 
 ```yaml
-name: RAG  DeepEval  Tests
+name: RAG DeepEval Tests
 
 on:
   push:

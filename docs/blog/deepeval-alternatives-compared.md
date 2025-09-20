@@ -28,7 +28,7 @@ This guide is an overview of some alternatives to DeepEval, how they compare, an
 - **Company**: Exploding Gradients, Inc.
 - **Founded**: 2023
 - **Best known for**: RAG evaluation
-- **Best for**: Data scientist, researchers
+- **Best for**: Data scientists, researchers
 
 Ragas is most known for RAG evaluation, where the founders originally released a paper on the referenceless evaluation of RAG pipelines back in early 2023.
 
@@ -44,7 +44,7 @@ Ragas is most known for RAG evaluation, where the founders originally released a
 
 ### What people like about Ragas
 
-Ragas is praised for its research approach to evaluating RAG pipelines, and has built-in synthetic data generation makes it easy for teams to get started with RAG evaluation.
+Ragas is praised for its research approach to evaluating RAG pipelines, and its built-in synthetic data generation makes it easy for teams to get started with RAG evaluation.
 
 ### What people dislike about Ragas
 
@@ -52,7 +52,7 @@ Developers often find Ragas frustrating to use due to:
 
 - Poor support for customizations such as metrics and LLM judges
 - Minimal ecosystem, most of which borrowed from LangChain, that doesn't go beyond RAG
-- Sparse documentation that are hard to navigate
+- Sparse documentation that is hard to navigate
 - Frequent unhandled errors that make customization a challenge
 
 Read more on [DeepEval vs Ragas.](/blog/deepeval-vs-ragas)
@@ -73,7 +73,7 @@ Arize AI's Phoenix product is most known for LLM monitoring and tracing, where t
 ### Key differences
 
 1. **LLM evaluation focus**: DeepEval is purpose-built for LLM evaluation with native support for RAG, chatbot, agentic experimentation, with synthetic data generation capabilities, whereas Arize AI is a broader LLM observability platform that is better for one-off debugging via tracing.
-2. **Evaluation metrics**: DeepEval provides reliable, customizable, and deterministic evaluation metrics built specifically for LLMs, whereas Arize's metrics is more for surface-level insight; helpful to glance at, but can't rely on 100%.
+2. **Evaluation metrics**: DeepEval provides reliable, customizable, and deterministic evaluation metrics built specifically for LLMs, whereas Arize's metrics are more for surface-level insight; helpful to glance at, but can't be relied on 100%.
 3. **Scales to safety testing**: DeepEval scales seamlessly into safety-critical use cases like red teaming through attack simulations, while Arize lacks the depth needed to support structured safety workflows out of the box.
 
 ### What people like about Arize
@@ -165,8 +165,8 @@ The platform is closed-source, making it difficult to customize evaluation metri
 
 ## Why people choose DeepEval?
 
-DeepEval is purpose-built for the ideal LLM evaluation workflow with support for prompt, RAG, agents, and chatbot testing. It offers full customizability, reliable and reproducible results like no one else, and allow users to trust fully for pre-deployment regressions testing and A|B experimentation for prompts and models.
+DeepEval is purpose-built for the ideal LLM evaluation workflow with support for prompt, RAG, agent, and chatbot testing. It offers full customizability, reliable and reproducible results like no one else, and allows users to trust fully for pre-deployment regression testing and A/B experimentation for prompts and models.
 
-Its enterprise-ready cloud platform [Confident AI](https://confident-ai.com) takes no extra lines of code to integration, and allows you to take LLM evaluation to your organization once you see value with DeepEval. It is self-served, has transparent pricing, and teams can upgrade to more features whenever they are ready and feel comfortable after testing the entire platform out.
+Its enterprise-ready cloud platform [Confident AI](https://confident-ai.com) takes no extra lines of code to integrate, and allows you to take LLM evaluation to your organization once you see value with DeepEval. It is self-served, has transparent pricing, and teams can upgrade to more features whenever they are ready and feel comfortable after testing the entire platform out.
 
 It includes additional toolkits such as synthetic dataset generation and LLM red teaming so your team never has to stitch together multiple tools for your LLMOps purpose.

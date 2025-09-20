@@ -1,6 +1,6 @@
 ---
 title: DeepEval vs Arize
-description: DeepEval and Arize AI is similar in many ways, but DeepEval specializes in evaluation while Arize AI is mainly for observability.
+description: DeepEval and Arize AI are similar in many ways, but DeepEval specializes in evaluation while Arize AI is mainly for observability.
 slug: deepeval-vs-arize
 authors: [kritinv]
 date: 2025-04-21
@@ -137,7 +137,7 @@ DeepEval also integrates directly with LLM providers to power its metrics—sinc
 
 ### Platform
 
-Both DeepEval and Arize has their own platforms. DeepEval's platform is called Confident AI, and Arize's platform is called Phoenix.
+Both DeepEval and Arize have their own platforms. DeepEval's platform is called Confident AI, and Arize's platform is called Phoenix.
 
 Confident AI is built for powerful, customizable evaluation and benchmarking. Phoenix, on the other hand, is more focused on observability.
 
